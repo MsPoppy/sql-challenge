@@ -1,0 +1,25 @@
+CREATE TABLE departments (
+	dept_no VARCHAR (5) PRIMARY KEY,
+	dept_name VARCHAR (20)
+);
+
+CREATE TABLE titles (
+	title_id VARCHAR (6) PRIMARY KEY NOT NULL,
+	title VARCHAR (25)
+);
+
+
+CREATE TABLE employees (
+	emp_no INT PRIMARY KEY,
+	emp_title_id VARCHAR (6),
+	birth_date	INT NOT NULL,
+	first_name VARCHAR NOT NULL,
+	last_name VARCHAR NOT NULL,
+	sex VARCHAR (2),
+	hire_date INT NOT NULL	
+);
+
+CREATE TABLE salaries (
+	emp_no INT NOT NULL,
+	salary INT NOT NULL
+);
